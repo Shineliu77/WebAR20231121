@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content='width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, shrink-to-fit=yes'>
-    <title>Unity WebGL Player | chihleear</title>
+    <title>Unity WebGL Player | ar_final</title>
     <link rel="stylesheet" href="TemplateData/style.css">
     <style>
          html{
@@ -43,7 +43,15 @@
 		<imagetarget id='bear' src='targets/bear.png'></imagetarget>
 		<imagetarget id='1-1' src='targets/1-1.png'></imagetarget>
 		<imagetarget id='1-2' src='targets/1-2.png'></imagetarget>
-		<imagetarget id='end' src='targets/end.jpg'></imagetarget>
+		<imagetarget id='2-1' src='targets/2-1.png'></imagetarget>
+		<imagetarget id='2-2' src='targets/2-2.png'></imagetarget>
+		<imagetarget id='3-1' src='targets/3-1.png'></imagetarget>
+		<imagetarget id='3-2' src='targets/3-2.png'></imagetarget>
+		<imagetarget id='5-1' src='targets/5-1.png'></imagetarget>
+		<imagetarget id='5-2' src='targets/5-2.png'></imagetarget>
+		<imagetarget id='6-1' src='targets/6-1.png'></imagetarget>
+		<imagetarget id='6-2' src='targets/6-2.png'></imagetarget>
+		<imagetarget id='test' src='targets/test.png'></imagetarget>
 
     <div id="startWebcamDiv" class="ctaDiv">
         <p style="text-align: center; width:60vw">This augmented reality experience requires access to your device's camera</p>
@@ -61,7 +69,7 @@
             </div>
         </div>
     </div>
-    <script src="Build/1121.loader.js"></script>
+    <script src="Build/20231122.loader.js"></script>
     <script>
             var container = document.querySelector("#unity-container");
             var canvas = document.querySelector("#unity-canvas");
@@ -76,12 +84,12 @@
                 
                 document.getElementById("startWebcamDiv").style.display = "none";
                 createUnityInstance(document.querySelector("#unity-canvas"), {
-                    dataUrl: "Build/1121.data",
-                    frameworkUrl: "Build/1121.framework.js",
-                    codeUrl: "Build/1121.wasm",
+                    dataUrl: "Build/20231122.data",
+                    frameworkUrl: "Build/20231122.framework.js",
+                    codeUrl: "Build/20231122.wasm",
                     streamingAssetsUrl: "StreamingAssets",
                     companyName: "DefaultCompany",
-                    productName: "chihleear",
+                    productName: "ar_final",
                     productVersion: "0.1",
                     //webglContextAttributes: { "preserveDrawingBuffer": true },
                     // matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
